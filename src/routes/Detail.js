@@ -30,7 +30,7 @@ class Detail extends React.Component {
                </div>
                <span>{location.state.title}</span>
             </div>
-         )
+         );
       } else {
          return null
       }
