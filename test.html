@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      let number=[123,94,8,50,32]
+      number=number.map(function(value,index,array){
+         return value*value
+      })
+      number.forEach(console.log)
+   </script>
+   <script>
+      let teams=['양군','운재','시안이','한나'];
+      //map 함수를 사용하여 이름 뒤에 '화이팅!'을 붙이기
+      teams=teams.map(function(value,index,array){
+         return value+" 화이팅! ";
+      })
+      document.write(teams)
+   </script>
+</body>
+
+</html>
