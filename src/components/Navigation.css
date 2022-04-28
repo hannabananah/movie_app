@@ -1,35 +1,110 @@
 .nav {
-	z-index: 1;
-	position: fixed;
-	top: 50px;
-	left: 10px;
-	display: flex;
-	flex-direction: column;
-	background: white;
-	padding: 10px 20px;
-	box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
-		0 6px 16px -6px rgba(0, 0, 0, 0.025);
-    border-radius:5px;
+    z-index: 1;
+    position: fixed;
+    top: 50px;
+    right: 55px;
+    display: flex;
+    font-size: 0.65rem;
 }
+.nav a{
+    color: #111;
+    padding-right: 15px;
+    transition: 0.3s all ease;
+    font-family:Montserrat, sans-serif;
+}
+a:hover {
+    color: #e74c3c;
+  }
+  a:focus {
+    text-decoration: none;
+  }
+  a:active {
+    color: #FFF;
+  }
+    
+  .flex {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bttn {
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    margin: 0 17px;
+  }
+  .bttn:first-child{
+    padding-left: 6px;
+  }
+  .bttn:last-child{
+    padding-left: 2px;
+  }
+  .bttn:after {
+    transition: 0.3s all ease;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 3px;
+    border: 3px solid #e74c3c;
+  }
+  .bttn:before {
+    content: "";
+    position: absolute;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #fff;
+    z-index: -1;
+  }
+  .bttn:hover:after {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .bttn:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .bttn:active:before {
+    background-color: #e74c3c;
+  }
+  .bttn:active:after {
+    border-color: #e74c3c;
+  }
 
 @media screen and (max-width:1090px) {
-    .nav{
-        left:initial;
-        top:initial;
-        bottom:0px;
-        width:100%;
+    .nav {
+        left: initial;
+        top: initial;
+        bottom: 0px;
+        width: 100%;
     }
-    .nav a{
-        text-decoration:none;
-        color:#0008fc;
-        text-transform:uppercase;
-        font-size:12px;
-        text-align:center;
-        font-weight:600;
+
+    .nav a {
+        text-decoration: none;
+        color: #0008fc;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-align: center;
+        font-weight: 600;
     }
+
     /* a중 마지막 요소만 빼고*/
-    .nav a:not(:last-child){
-        margin-bottom:20px;
+    .nav a:not(:last-child) {
+        margin-bottom: 20px;
     }
 
 }

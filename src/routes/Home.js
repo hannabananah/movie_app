@@ -1,7 +1,8 @@
-import React from "react"
-import axios from "axios"
-import Movie from "../components/Movie"
-import "./Home.css"
+import React from "react";
+import axios from "axios";
+import Movie from "../components/Movie";
+import Header from "../components/Header";
+import "./Home.css";
 
 class Home extends React.Component {
 	state = {
@@ -25,9 +26,21 @@ class Home extends React.Component {
 
 		return (
 			<section className="container">
+				<div className="header">
+          <Header />
+        </div>
 				{isLoading ? (
 					<div className="loader">
-						<span className="loader__text"> "로딩중..."</span>
+						<div className="loader__text">
+							<span>L</span>
+							<span>o</span>
+							<span>a</span>
+							<span>d</span>
+							<span>i</span>
+							<span>n</span>
+							<span>g</span>
+							<span>.</span>
+						</div>
 					</div>
 				) : (
 					<div className="movies">
