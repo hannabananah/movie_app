@@ -148,7 +148,10 @@ a:link {
    .Iam b {
       top: 90px;
    }
-   .Iam b span{
+   .Iam b span:first-child{
+      font-size: 4rem;
+   }
+   .Iam b span:last-child{
       font-size: 4.5rem;
    }
 }

@@ -14,7 +14,7 @@ export default function Header() {
             <p>This is</p>
             <b>
                <div className="innerIam">
-                  what I made<br />
+                  <span>what I made</span><br />
                   stunning<br />
                   movies<br />
                   App<br />
