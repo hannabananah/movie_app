@@ -9,7 +9,7 @@
 .nav a{
     color: #111;
     padding-right: 15px;
-    transition: 0.3s all ease;
+    transition: 2s all ease;
     font-family:Montserrat, sans-serif;
 }
 a:hover {
@@ -78,16 +78,13 @@ a:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
-  .bttn:active:before {
+  .bttn:active:before,.bttn:active:after {
     background-color: #e74c3c;
-  }
-  .bttn:active:after {
-    border-color: #e74c3c;
   }
 
 @media screen and (max-width:1090px) {
     .nav {
-        left: initial;
+        left: 0;
         top: initial;
         bottom: 0px;
         width: 100%;
@@ -95,16 +92,28 @@ a:hover {
 
     .nav a {
         text-decoration: none;
-        color: #0008fc;
+        color: #111;
         text-transform: uppercase;
         font-size: 12px;
         text-align: center;
         font-weight: 600;
+        width: 200px;
     }
 
-    /* a중 마지막 요소만 빼고*/
-    .nav a:not(:last-child) {
-        margin-bottom: 20px;
+    .bttn:before, .bttn:after{
+      width: 100%;
+      transform: rotate(0);
     }
-
+    .bttn:after{
+      opacity: 0;
+    }
+    .bttn:hover:after{
+      transition: all .5s;
+      transform: rotate(0);
+      opacity: 1;
+    }
+    .bttn:active:before,.bttn:active:after {
+      background-color: none;
+      border: none;
+    }
 }
