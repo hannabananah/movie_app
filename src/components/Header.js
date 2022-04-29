@@ -18,7 +18,7 @@ export default function Header() {
                   stunning<br />
                   movies<br />
                   App<br />
-                  for your life
+                  <span>for your life</span>
                </div>
             </b>
          </div>
