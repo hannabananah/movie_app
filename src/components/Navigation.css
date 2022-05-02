@@ -113,7 +113,7 @@ a:hover {
       opacity: 1;
     }
     .bttn:active:before,.bttn:active:after {
-      background-color: none;
+      background-color: transparent;
       border: none;
     }
 }
