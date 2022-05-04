@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/movie_app/static/css/main.f09de76d.css",
+    "main.css": "/movie_app/static/css/main.b09ad585.css",
     "main.js": "/movie_app/static/js/main.0f841037.js",
     "static/media/film_collage.png": "/movie_app/static/media/film_collage.575b6ce5006d2a9967bf.png",
     "index.html": "/movie_app/index.html",
-    "main.f09de76d.css.map": "/movie_app/static/css/main.f09de76d.css.map",
+    "main.b09ad585.css.map": "/movie_app/static/css/main.b09ad585.css.map",
     "main.0f841037.js.map": "/movie_app/static/js/main.0f841037.js.map"
   },
   "entrypoints": [
-    "static/css/main.f09de76d.css",
+    "static/css/main.b09ad585.css",
     "static/js/main.0f841037.js"
   ]
 }
