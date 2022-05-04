@@ -40,6 +40,8 @@ class Home extends React.Component {
 							<span>n</span>
 							<span>g</span>
 							<span>.</span>
+							<span>.</span>
+							<span>.</span>
 						</div>
 					</div>
 				) : (
